@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purple Cave</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* 雪花特效 */
+      .snowflake {
+        color: #fff;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        text-shadow: 0 0 5px #000;
+      }
+      @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+      </style>
+      <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+      </div>
+  </head>
+  <body>
+    <header id="00">
+      <p class="top" id="top">
+        Welcome to my website!
+      </p>
+    </header>
+    <main>
+      <aside id="aboutme">
+          <section class="about">
+            <div class="card">
+              <table>
+                <tbody>
+                  <tr>
+                    <td style="text-align: center; width: 50%;">
+                      <br>
+                          <img src="images/me.jpg" style="border-radius:200px;">
+                    </td>
+                    <td style="text-align: center; width: 40%;"> 
+                      <i class="smalltitle">Hobbies</i>
+                      <br>
+                      <br>
+                      <p class="content2">
+                        追星<br>
+                        看展覽<br>
+                        跑咖<br>
+                      </p>
+                    </td>
+                    <td style="text-align: center; width: 40%;"> 
+                      <i class="smalltitle">Personality</i>
+                      <br>
+                      <br>
+                      <p class="content2">
+                        開朗活潑<br>
+                        樂觀積極<br>
+                        幽默有趣<br>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left"> 
+                      <h2> 劉胤苓 Amethyst Liu</h2><br>
+                      <p class="slogan">All I need is a cup of coffee.</p>
+                      <br>
+                      <p class="content">
+                        Born in 20030519<br>
+                        中原大學資訊管理學系二年級<br>
+                        Sign: Taurus<br>
+                        MBTI: ENFP/ESFP<br>
+                      </p>
+                    </td>
+                    <td>
+                      <i class="smalltitle">Like</i>
+                      <br>
+                      <br>
+                      <p class="content2">
+                      咖啡因製品<br>
+                      貓貓<br>
+                      閃亮亮的東西<br>
+                      </p>
+                    </td>
+                    <td> 
+                      <i class="smalltitle">Hate</i>
+                      <br>
+                      <br>
+                      <p class="content2">
+                      菸味<br>
+                      六隻腳生物<br>  
+                      帳戶餘額<br>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="menu">
+            <div class="card01">
+                    <div class="icon">
+                      <a href="https://instagram.com/0519amethyst?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <img src="images/ig.png" id="instagram">
+                      </a>
+                      <a href="https://www.facebook.com/profile.php?id=100010589287166&mibextid=LQQJ4d" target="_blank">
+                        <img src="images/fb.png" id="facebook">
+                      </a>
+                      <a href="mailto:s0980258@gmail.com">
+                        <img src="images/email.png">
+                      </a>
+                    </div>
+                  <br>
+                  <br>
+                  <h3>MENU</h3>
+                  <a href="#aboutme">About Me</a><br>
+                  <a href="#PersonalSkills">Personal Skills</a><br>
+                  <a href="#ProgrammingSkills">Programming Skills</a><br>
+                  <a href="#experience">Experience</a><br>
+            </div>
+          </section>
+      </aside>
+      <aside>
+          <section class="card02" id="PersonalSkills">
+            <div class="mode2">
+              <div class="ability">Personal Skills</div>
+              <br>
+              <br>
+              <ul class="none">
+                  <li>
+                    <div class="bar">
+                          <div class="name">Present</div>
+                          <span class="percent">70%</span>
+                    </div>
+                    <div class="loading">
+                      <div id="percent4"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="bar">
+                          <div class="name">Make Up</div>
+                          <span class="percent">75%</span>
+                    </div>
+                    <div class="loading">
+                      <div id="percent5"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="bar">
+                          <div class="name">Tarot Cards</div>
+                          <span class="percent">80%</span>
+                    </div>
+                    <div class="loading">
+                      <div id="percent6"></div>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+          </section>
+          <section class="card03" id="ProgrammingSkills">
+            <div class="mode2">
+              <div class="ability">Programming Skills</div>
+              <br>
+              <br>
+              <ul class="none">
+                  <li>
+                    <div class="bar">
+                          <div class="name">Python</div>
+                          <span class="percent">50%</span>
+                    </div>
+                    <div class="loading">
+                      <div id="percent1"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="bar">
+                          <div class="name">Java</div>
+                          <span class="percent01">55%</span>
+                    </div>
+                    <div class="loading">
+                      <div id="percent2"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="bar">
+                          <div class="name">HTML</div>
+                          <span class="percent">50%</span>
+                    </div>
+                    <div class="loading">
+                      <div id="percent3"></div>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+          </section>
+      </aside>
+      <div class="clearfix"></div>
+      <article>
+        <section class="card04" id="experience">
+          <div class="exp">Experience</div>
+          <br>
+          <br>
+          <br>
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align:left; width:20% ;">
+                  <br>
+                  <h2 class="subtitle">
+                    課程活動---企業概論
+                  </h2>
+                  <br>
+                  <br>
+                  <img src="images/honeycake.jpg" style="border-radius:50px;">
+                </td>
+                <td style="text-align:center; width:20%">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p class="exptext">"在企業概論中，我們組別和普仁基金會與微熱山丘共同合作，販售產品蜂蜜脆蛋糕並將部分收益捐款給普仁基金會。我的職位是銷售，過程中學到許多溝通技巧也累積了不少經驗。"
+                  <br>
+                  <br>
+                  </p>
+                  <p class="exptextlink">
+                  <a href="https://instagram.com/honeyrusk_?igshid=YmMyMTA2M2Y=" target="_blank">(點擊前往此專案社群帳號)</a><br>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align:left; width:20% ;">
+                  <br>
+                  <h2 class="subtitle">
+                    專案---後端期末專題
+                  </h2>
+                  <br>
+                  <br>
+                  <img src="images/santacup.png" style="border-radius:50px;">
+                </td>
+                <td style="text-align:center; width:20%">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p class="exptext">"後端真的累到快死掉，每天睡不到三小時，壓力大到夢到自己在地獄，閻羅王還叫我做後台管理(沒我開玩笑的，但睡不好是真的)但是最後結果呈現很好，我也非常滿意我的分數!專案進行時碰到了許多操作問題，所幸大多數都有解決，也很感謝我的神隊友們，如果沒有他們的幫助，我也無法完成這個專案!"
+                  <br>
+                  <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align:left; width:20% ;">
+                  <br>
+                  <h2 class="subtitle">
+                    工作經驗---補習班英文老師
+                  </h2>
+                  <br>
+                  <br>
+                  <img src="images/englishteacher.jpg" style="border-radius:50px;">
+                </td>
+                <td style="text-align:center; width:20%">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p class="exptext">"我在補習班任職英文老師已經超過一年，因為一直都很喜歡英文，所以也去找了跟英文有關的打工。在這份工作裡需要和小朋友們接觸﹐我的耐心和細心也因此增長許多，另外，我的英文也沒有因為上大學後就嚴重退化，多益成績還進步100多分，所以我很熱愛這份工作!"<br>
+                    (圖片中的Meythy是我的英文名縮寫!)<br>
+                  <br>
+                  <br>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </main>
+    <div class="clearfix"></div>
+    <section>
+    <section class="card05" id="experience">
+          <div class="exp">My Life</div>
+          <br>
+          <br>
+          <br>
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align:left; width:20% ;">
+                  <br>
+                  <h2 class="subtitle">
+                    追星人生
+                  </h2>
+                  <br>
+                  <br>
+                  <img src="images/idols2.jpg" style="border-radius: 50px;">
+                </td>
+                <td style="text-align:center; width:20%">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p class="exptext">"從國中開始關注韓國偶像團體，覺得看著喜歡的人在台上閃閃發光的樣子，讓我也有動力去面對自己生活中的各種挑戰。我像是在森林中迷路的旅人，而他們則是高掛在夜中的星星，當我需要找尋方向，就會仰望他們，他們就是答案。"
+                  <br>
+                  <br>
+                  </p>
+                  <p class="exptextlink">
+                    <a href="https://www.instagram.com/p/CppxlQqhPTT/?igshid=YmMyMTA2M2Y=" target="_blank">(想知道這個穿玩偶裝的人是誰嗎? 請點我)</a><br>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align:left; width:20% ;">
+                  <br>
+                  <h2 class="subtitle">
+                    跑咖(啡廳)行程
+                  </h2>
+                  <br>
+                  <br>
+                  <img src="images/cafe.jpg" style="border-radius:50px;">
+                </td>
+                <td style="text-align:center; width:20%">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p class="exptext">"我的另外一個興趣就是跑咖啡廳，除了喜歡甜點外，每家咖啡廳都有屬於他們的故事，而故事會反映在他們的裝璜以及產品上。我會花時間探索很多地方的咖啡廳，去慢慢品嘗他們想要告訴我的所有細節。"
+                  <br>
+                  <br>
+                  </p>
+                  <p class="exptextlink">
+                    <a href="https://instagram.com/100tastes?igshid=YmMyMTA2M2Y=" target="_blank">(點擊前往此咖啡廳社群帳號)</a><br>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align:left; width:20% ;">
+                  <br>
+                  <h2 class="subtitle">
+                    Tarot Cards 塔羅牌
+                  </h2>
+                  <br>
+                  <br>
+                  <img src="images/tarot.jpg" style="border-radius:50px;">
+                </td>
+                <td style="text-align:center; width:20%">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p class="exptext">"我一直都對神祕色彩的事物擁有高度興趣，第一次接觸塔羅牌也是國中，而這個技能我花了很多時間去培養，至今已超過五年，也有另外收費幫人占卜。"<br>
+                  <br>
+                  <br>
+                    (最近休息中)
+                  <br>
+                  <br>
+                  <br>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align:left; width:20% ;">
+                  <br>
+                  <h2 class="subtitle">
+                    超愛看展覽
+                  </h2>
+                  <br>
+                  <br>
+                  <img src="images/mulan.jpg" style="border-radius:50px;">
+                </td>
+                <td style="text-align:center; width:20%">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p class="exptext">"只要假日有時間，我會到外面走走看看，看展覽也成了我的休閒娛樂之一。參觀展覽或者其他藝文活動後會讓我去重新審思自己的生活和價值觀，是個很好充實內在的管道。"<br>
+                    (朱宗慶打擊樂團的演出超級精彩!)<br>
+                  <br>
+                  <br>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align:left; width:20% ;">
+                  <br>
+                  <h2 class="subtitle">
+                    熱衷於美妝
+                  </h2>
+                  <br>
+                  <br>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/KC-NRNoKeb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </td>
+                <td style="text-align:center; width:20%">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p class="exptext">"我是很喜歡美妝的人，時常看美妝教學影片還有花時間自己練習，執著於各種妝容的細節，我希望可以藉此精進自己的功力。除了讓自己變得更精緻，未來也能幫別人化出受人稱讚的妝容。"<br>
+                  <br>
+                  <br>
+                  <p class="exptext">(影片連結為我很喜歡的美妝頻道)<br>
+                    (姐姐長得好好看嗚嗚嗚)</p>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </main>
+    <div class="clearfix"></div>
+    <section>
+      </article>
+    </main>
+    <div class="clearfix"></div>
+    <section>
+      <!--回頂端圖件-->
+      <a href="#00">
+        <img src="images/magicball.jpg" style="border-radius:50% ;" class="backtop">
+      </a>
+    </section>
+    <footer>
+      Copyright @2023 Amethyst Liu All Reserved
+    </footer>
+  </body>
+</html>
